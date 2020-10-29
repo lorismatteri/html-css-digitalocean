@@ -9,10 +9,28 @@ body {
 }
 
 /* Sezione Header */
+#site_header {
+  height: 280px;
+  background: blue;
+}
 
 /* Sezione Navbar */
 #nav_bar {
   height: 80px;
   width: 100%;
-  background: red;
+  background: white;
+}
+
+#nav_bar div {
+  height: 100%;
+  border: 2px solid black;
+}
+
+#customer, #designed {
+  background: lightgrey;
+}
+
+#service, #get_started {
+  background: blue;
+  color: white;
 }
