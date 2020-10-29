@@ -10,14 +10,17 @@ body {
 
 /* Sezione Header */
 #site_header {
-  height: 280px;
-  background: blue;
+  height: 620px;;
+  background-image: url('../img/bg-home-hero.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Sezione Navbar */
 #nav_bar {
   height: 80px;
   width: 100%;
+  line-height: 80px;
   background: white;
 }
 
@@ -26,6 +29,11 @@ body {
   border: 2px solid black;
 }
 
+#nav_bar img {
+  width: 100%;
+}
+
+/* Sezione Main */
 #customer, #designed {
   background: lightgrey;
 }
@@ -35,6 +43,7 @@ body {
   color: white;
 }
 
+/* Sezione footer */
 #site_footer {
   background: darkblue;
   height: auto;
