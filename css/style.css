@@ -34,3 +34,8 @@ body {
   background: blue;
   color: white;
 }
+
+#site_footer {
+  background: darkblue;
+  height: auto;
+}
