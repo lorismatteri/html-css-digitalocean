@@ -1,4 +1,18 @@
+.debug [class*="col-"] {
+  height: 200px;
+  background-color: pink;
+  border: 1px solid red;
+}
+
 body {
-  background: red;
   font-family: 'Roboto', sans-serif;
+}
+
+/* Sezione Header */
+
+/* Sezione Navbar */
+#nav_bar {
+  height: 80px;
+  width: 100%;
+  background: red;
 }
