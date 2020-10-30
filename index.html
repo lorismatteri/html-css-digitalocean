@@ -51,14 +51,42 @@
       </nav>
       <!-- /Navbar -->
 
-      <div class="banner debug">
+      <div id="banner">
 
         <div class="container">
 
           <div class="row">
 
-            <div class="col-lg-7 col-sm-7 col-xs-12">Jumbotron</div>
-            <div class="col-lg-5 col-sm-5 col-xs-12">Form</div>
+            <div class="col-lg-7 col-sm-7 col-xs-12">
+
+              <div id="banner_text"class="jumbotron bg_transparent">
+                <h1>The simplest cloud platform for developers & teams</h1>
+                <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether youre running one virtual machine or ten thousand.</p>
+              </div>
+            </div>
+            <!-- /Jumbotron -->
+
+            <div class="col-lg-5 col-sm-5 col-xs-12">
+
+              <form id="form">
+
+                <h2 class="text-center">Deploy your app in seconds. <span>Get started now.</span></h2>
+
+                <div class="form-group">
+                  <input type="email" class="form-control" id="user-email-address" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="user-password" placeholder="Password">
+                </div>
+
+                <button type="button" class="btn btn-default btn-lg btn-block">Create your account</button>
+
+                <button type="button" class="btn btn-default btn-lg btn-block"><i class="fab fa-google pr_3"></i><span>Sign up with Google</span></button>
+
+              </form>
+
+            </div>
+            <!-- /Form -->
 
           </div>
 

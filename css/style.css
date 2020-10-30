@@ -8,11 +8,74 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* /Utility */
+.bg_transparent {
+  background-color: transparent;
+}
+
+.pr_3 {
+  padding-right: 3rem;
+}
 /* Sezione Header */
-#site_header {
-  height: 620px;;
+#banner {
+  height: auto;
+  margin-top: 60px;
   background-image: url('../img/bg-home-hero.svg');
   background-size: cover;
+  color: white;
+}
+
+#banner_text h1 {
+  max-width: 85%;
+  font-size: 4.75rem;
+  font-weight: 700;
+}
+
+#banner_text p {
+  color: #031b4f;
+  font-weight: 500;
+}
+
+#banner form {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 4.5rem;
+  color: black;
+}
+
+#form h2 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  color: #031b4f;
+  margin-top: 1rem;
+}
+
+#form h2 span {
+  color: #006aff;
+}
+
+#form .form-group {
+  margin-bottom: 0.75rem;
+}
+
+#form .form-grop input {
+  box-shadow: 0;
+}
+
+#form button:first-of-type {
+  background-color: #006aff;
+  color: white;
+  font-weight: 700;
+}
+
+#form button:last-of-type {
+  color: #495057;
+  font-weight: 700;
+  border-top: 0;
+  border-left: 0;
+  box-shadow: 1px 1px lightgrey;
 }
 
 /* Sezione Navbar */
@@ -57,7 +120,7 @@ body {
 }
 /* Sezione Main */
 #customer, #designed {
-  background: lightgrey;
+  background: #f3f5f9;
 }
 
 #service, #get_started {
