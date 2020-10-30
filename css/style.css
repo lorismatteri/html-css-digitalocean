@@ -152,6 +152,8 @@ body {
 }
 
 /* Sezione Main */
+
+/* Sezione customer */
 #customer, #designed {
   background: #f3f5f9;
   height: auto;
@@ -175,6 +177,32 @@ body {
   font-weight: bold;
 }
 
+/* Sezione deploy */
+#deploy h2 {
+  color: #031b4f;
+}
+
+#deploy p {
+  color: #5b6987;
+  font-weight: 500;
+  font-size: 1.75rem;
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+}
+
+#deploy ul {
+  list-style: none;
+  position: relative;
+  left: 5rem;
+}
+
+#deploy li {
+  padding: 1rem 0.65rem;
+  color: #5b6987;
+  border-left: 2px solid lightgrey;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 #service, #get_started {
   background: blue;
   color: white;
