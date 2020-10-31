@@ -94,6 +94,7 @@ body {
 }
 
 #form button:last-of-type {
+  position: relative;
   color: #5b6987;
   font-weight: 700;
   border-top: 0;
@@ -110,8 +111,15 @@ body {
 #form a {
   color: #006aff;
   display: inline-block;
+  text-decoration: underline;
   margin-top: 1.5rem;
   font-weight: 500;
+}
+
+#form i {
+  position: absolute;
+  left: 1.5rem;
+  padding-top: 0.25rem;
 }
 
 /* Sezione Navbar */
@@ -210,6 +218,8 @@ body {
 
 .card {
   padding: 0 1.5rem;
+  height: 50%;
+  margin: 1.5rem;
 }
 
 #deploy .card img {
@@ -218,6 +228,7 @@ body {
 }
 
 #deploy .card h5 {
+  color: #031b4f;
 }
 
 #deploy .card p {
