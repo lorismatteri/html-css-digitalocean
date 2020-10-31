@@ -179,19 +179,18 @@ body {
 
 #customer .logo_card {
   max-width: 100%;
-  /* height: 100%; */
+  margin-bottom: 3rem;
 }
 
-#customer a, {
+#customer a, #features a {
   display: inline-block;
   color: #006aff;
   text-decoration: none;
-  margin-top: 3rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* Sezione deploy */
-#deploy h2, #designed h2, #designed h5, #teams h2, #teams h5 {
+#deploy h2, #designed h2, #designed h5, #teams h2, #teams h5, #features h2, #features h5 {
   color: #031b4f;
 }
 
@@ -218,7 +217,6 @@ body {
 
 .card {
   padding: 0 1.5rem;
-  height: 50%;
   margin: 1.5rem;
 }
 
@@ -227,11 +225,14 @@ body {
   width: auto;
 }
 
-#deploy .card h5 {
+.card h5 {
   color: #031b4f;
+  font-weight: 700;
 }
 
-#deploy .card p {
+#deploy .card p, #features .card p {
+  color: #5b6987;
+  font-weight: 500;
   font-size: 1.25rem;
   padding: 0;
 }
@@ -284,8 +285,14 @@ body {
   font-weight: bold;
 }
 
+/* Sezione Features */
+#features h2, #designed h2 {
+  margin-bottom: 2rem;
+}
+
+/* Sezione Service */
 #service, #get_started {
-  background: blue;
+  background: linear-gradient(to bottom, #0047C5, #001E99);
   color: white;
 }
 
@@ -319,7 +326,7 @@ body {
     padding-right: 0;
   }
 
-  #arrow_left, #arrow_right {
+  .arrow_left, .arrow_right {
     display: none;
   }
 }
