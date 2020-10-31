@@ -17,6 +17,10 @@ body {
   padding-right: 3rem;
 }
 
+.pr_9 {
+  padding-right: 9rem;
+}
+
 .pl_1 {
   padding-left: 1rem;
 }
@@ -165,8 +169,9 @@ body {
   color: #5b6987;
 }
 
-#customer img {
-  max-width: 100%;
+#customer .logo_card {
+  width: 100%;
+  height: 100%;
 }
 
 #customer a {
@@ -192,8 +197,7 @@ body {
 
 #deploy ul {
   list-style: none;
-  position: relative;
-  left: 5rem;
+  padding-left: 9rem;
 }
 
 #deploy li {
@@ -203,6 +207,25 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+.card {
+  padding: 0 1.5rem;
+}
+
+#deploy .card img {
+  height: 50px;
+  width: auto;
+}
+
+#deploy .card h5 {
+}
+
+#deploy .card p {
+  font-size: 1.25rem;
+  padding: 0;
+}
+
+
 #service, #get_started {
   background: blue;
   color: white;
@@ -222,5 +245,11 @@ body {
 
   #burger {
     display: block;
+  }
+}
+
+@media all and (max-width: 767.5px) {
+  #deploy ul {
+    padding-left: 1.5rem;
   }
 }
