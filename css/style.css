@@ -166,7 +166,7 @@ body {
 /* Sezione Main */
 
 /* Sezione customer */
-#customer, #designed {
+#customer, #designed, #teams {
   background: #f3f5f9;
   height: auto;
 }
@@ -178,11 +178,11 @@ body {
 }
 
 #customer .logo_card {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  /* height: 100%; */
 }
 
-#customer a {
+#customer a, {
   display: inline-block;
   color: #006aff;
   text-decoration: none;
@@ -191,11 +191,11 @@ body {
 }
 
 /* Sezione deploy */
-#deploy h2 {
+#deploy h2, #designed h2, #designed h5, #teams h2, #teams h5 {
   color: #031b4f;
 }
 
-#deploy p {
+#deploy p, #designed p, #teams p {
   color: #5b6987;
   font-weight: 500;
   font-size: 1.75rem;
@@ -236,6 +236,53 @@ body {
   padding: 0;
 }
 
+/* Sezione Designed */
+.card_img img{
+  width: 100%;
+}
+
+.arrow_left, .arrow_right {
+  margin-top: 15rem;
+}
+
+.arrow_left i, .arrow_right i {
+  font-size: 4.5rem;
+  cursor: pointer;
+}
+
+.arrow_left i {
+  color: rgba(3, 27, 79, 0.5);
+}
+
+.circles {
+  padding-top: 2rem;
+}
+
+.circles li {
+  color: #006aff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Sezione Teams */
+#teams .card_img {
+  margin-top: 4rem;
+  padding: 4rem 0;
+  background: white;
+}
+
+#teams .card_img img {
+  width: 50%;
+  padding-bottom: 4rem;
+}
+
+#teams a {
+  display: inline-block;
+  color: #006aff;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: bold;
+}
 
 #service, #get_started {
   background: blue;
@@ -260,7 +307,19 @@ body {
 }
 
 @media all and (max-width: 767.5px) {
+  /* .container_sm {
+    max-width: 480px;
+  } */
+
   #deploy ul {
     padding-left: 1.5rem;
+  }
+
+  #customer [class*="col-"] {
+    padding-right: 0;
+  }
+
+  #arrow_left, #arrow_right {
+    display: none;
   }
 }
