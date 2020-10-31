@@ -230,7 +230,7 @@ body {
   font-weight: 700;
 }
 
-#deploy .card p, #features .card p {
+#deploy .card p, #features .card p, #site_footer .card p{
   color: #5b6987;
   font-weight: 500;
   font-size: 1.25rem;
@@ -296,12 +296,33 @@ body {
   color: white;
 }
 
+/* Sezione Get_started */
+#get_started button {
+  color: #006aff;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
 /* Sezione footer */
 #site_footer {
-  background: darkblue;
+  background: #031C4E;
   height: auto;
 }
 
+#site_footer img {
+  margin-bottom: 1.2rem;
+}
+
+#site_footer h6 {
+  color: #30446C;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+#site_footer ul i {
+  font-size: 2rem;
+  color: #5b6987;
+}
 /* Media Queries */
 @media all and (max-width: 1200px) {
   #menu_left, #menu_right {
