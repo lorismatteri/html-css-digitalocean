@@ -341,7 +341,7 @@ body {
 }
 
 #site_footer ul i {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #5b6987;
 }
 
@@ -370,6 +370,64 @@ body {
   color: white;
   text-decoration: none;
 }
+
+/* Chatbot */
+#chatbot {
+  position: fixed;
+  bottom: 2rem;
+  right: 0;
+  margin: 2rem;
+}
+
+#chatbot_img {
+  position: relative;
+  display: inline-block;
+}
+
+#chatbot_img img {
+  height: 150px;
+  width: auto;
+}
+
+#badge {
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  height: 3rem;
+  width: 3rem;
+  line-height: 2.7rem;
+  border-radius: 50%;
+  border: 3px solid white;
+  background: red;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.bubble {
+  position: relative;
+  width: auto;
+  background-color: #B3C2E7;
+  color: #031b4f;
+  font-size: 1.75rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -1rem;
+  border-width: 1rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #B3C2E7;
+}
+
 /* Media Queries */
 @media all and (max-width: 1200px) {
   #menu_left, #menu_right {
@@ -382,13 +440,9 @@ body {
 }
 
 @media all and (max-width: 767.5px) {
-  .container_sm {
+  .container_sm, .container_sm .row {
     width: auto;
     margin: auto;
-  }
-
-  #nav_bar {
-    max-width: 767.5px;
   }
 
   #deploy ul, #site_footer h5, #site_footer ul.list_none {
@@ -406,11 +460,49 @@ body {
   .arrow_left, .arrow_right {
     display: none;
   }
+
+  #designed .row {
+    margin: auto;
+  }
+
+  #chatbot {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    text-align: left;
+  }
+
+  .bubble {
+    display: block;
+    position: fixed;
+    bottom: 0;
+  }
+
+  #chatbot_img {
+    margin-bottom: 2rem;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1010px) {
   .container_sm {
     width: 750px;
     margin: auto;
+  }
+
+  #chatbot {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    text-align: left;
+  }
+
+  .bubble {
+    display: block;
+    position: fixed;
+    bottom: 0;
+  }
+
+  #chatbot_img {
+    margin-bottom: 2rem;
   }
 }
