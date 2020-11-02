@@ -7,14 +7,6 @@ body {
   background-color: transparent;
 }
 
-.pr_3 {
-  padding-right: 3rem;
-}
-
-.pr_9 {
-  padding-right: 9rem;
-}
-
 .pl_1 {
   padding-left: 1rem;
 }
@@ -139,10 +131,6 @@ body {
   background: white;
 }
 
-#nav_bar div {
-  height: 100%;
-}
-
 #nav_bar img {
   max-width: 100%;
   max-height: 4rem;
@@ -210,6 +198,10 @@ body {
   margin-bottom: 4rem;
 }
 
+#deploy .row {
+  padding-right: 9rem;
+}
+
 #deploy ul {
   list-style: none;
   padding-left: 9rem;
@@ -225,6 +217,7 @@ body {
 
 .card {
   padding: 0 1.5rem;
+  height: 50%;
   margin: 1.5rem;
 }
 
@@ -327,7 +320,6 @@ body {
 /* Sezione footer */
 #site_footer {
   background: #031C4E;
-  height: auto;
 }
 
 #site_footer img {
@@ -386,7 +378,6 @@ body {
 
 #chatbot_img img {
   height: 150px;
-  width: auto;
 }
 
 #badge {
@@ -439,8 +430,8 @@ body {
   }
 }
 
-@media all and (max-width: 767.5px) {
-  .container_sm, .container_sm .row {
+@media all and (max-width: 768px) {
+  .container_sm, .row {
     width: auto;
     margin: auto;
   }
@@ -453,7 +444,11 @@ body {
     padding-left: 0;
   }
 
-  #customer [class*="col-"] {
+  /* #customer [class*="col-"] {
+    width: 100%
+  } */
+
+  #customer [class*="col-"], #features [class*="col-"], #service [class*="col-"], #teams [class*="col-"] {
     padding-right: 0;
   }
 
@@ -504,5 +499,24 @@ body {
 
   #chatbot_img {
     margin-bottom: 2rem;
+  }
+}
+
+@media all and (max-width: 342px) {
+  #customer [class*="col-xs-"] {
+    width: 100%;
+  }
+
+  #banner_text h1 {
+    max-width: 100%;
+    font-size: 2.75rem;
+  }
+
+  #banner_text p {
+    font-size: 1.75rem;
+  }
+
+  #form button {
+    font-size: 1.5rem;
   }
 }
